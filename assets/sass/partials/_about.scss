@@ -1,0 +1,69 @@
+.page-about {
+	background-color: $purple-deep;
+	color: $text-light;
+	h1, h2, h3, h4 {
+		color: $white;
+	}
+	.flexion .flexion-label {
+
+	}
+}
+.page-about2 {
+	background-color: $purple-deep;
+}
+.page-about2 {
+	@media (min-width: 992px) {
+		.hero-default-lg {
+			.hero-heading {
+				font-size: 5rem;
+			}
+		}
+	}
+}
+.hero-blank-page {
+	@media (min-width: 992px) {
+		&.hero-default-lg {
+			.hero-heading {
+				font-size: 5rem;
+			}
+		}
+	}
+}
+
+.text-widget {
+	p {
+		margin-bottom: 2rem;
+	}
+	h2 {
+		line-height: 1.5;
+		margin-bottom: 2rem;
+	}
+}
+
+.flexion {
+	+ .flexion {
+		margin-top: 6rem;
+	}
+	.flexion-label {
+		color: $muted;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 1rem;
+	}
+	.flexion-title {
+		margin-bottom: 0;
+	}
+	.flexion-text {
+		padding-top: 1.25rem;
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.flexion-image {
+		img {
+			width: 100%;
+		}
+	}
+}

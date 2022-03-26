@@ -1,0 +1,93 @@
+.hr-bestsellers {
+	border-top-color: rgba($black, 0.2);
+	margin-top: 0;
+	margin-bottom: $common-space;
+}
+.feat-category {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	.category-media {
+		position: relative;
+	}
+	.category-image {
+		position: relative;
+		overflow: hidden;
+		&:before {
+			content: " ";
+			display: block;
+			padding-top: 133.33333%;
+		}
+		img {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.25s ease;
+		}
+	}
+	.category-content {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+		padding: 1rem;
+	}
+	.category-title {
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 0.063rem;
+		margin-bottom: 0;
+		text-shadow: 0 3px 6px rgba($black, 0.5);
+	}
+	&:hover {
+		.category-image {
+			img {
+				transform: scale(1.025);
+			}
+		}
+	}
+}
+.signup-offserbox {
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.form-control {
+		@include placeholder {
+			color: rgba($white, 0.5);
+		}
+		height: 50px;
+		border-radius: 0;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		background-color: transparent;
+		font-size: 1.125rem;
+		color: $white;
+		text-align: center;
+		transition: all 0.3s linear;
+		&:focus, &:active {
+			box-shadow: none;
+		}
+		&:focus {
+			font-size: 1.5rem;
+		}
+	}
+	.subscribe-button {
+		padding-top: 1rem;
+	}
+}

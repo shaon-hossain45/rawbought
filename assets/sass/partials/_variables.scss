@@ -1,0 +1,96 @@
+$white: 						 #ffffff !default;
+$black: 						 #000000 !default;
+$red: 							 red !default;
+$purple-deep: 					 #403A5B !default;
+$purple-thin: 					 #766C86 !default;
+$cyan-deep: 					 #637C8B !default;
+$cyan-thin: 					 #9BBABD !default;
+$golden-deep: 					 #BCB8B0 !default;
+$golden-thin: 					 #DFDBD0 !default;
+
+$color-primary:                  #403A5B !default;
+$primary:                  		 #403A5B !default;
+$color-secondary:                #FED41A !default;
+$secondary:                		 #FED41A !default;
+$color-success:                  #5cb85c !default;
+$success:                  		 #5cb85c !default;
+$color-info:                     #5bc0de !default;
+$info:                     		 #5bc0de !default;
+$color-warning:                  #f0ad4e !default;
+$color-danger:                   #d9534f !default;
+$danger:                   		 #d9534f !default;
+
+$dark: 							 $primary !default;
+$light-primary: 				 $purple-thin !default;
+$light-success: 				 #d8f6df !default;
+
+$light: 						 #fafafc !default;
+
+$color-gray-base:                #37383c;
+$color-gray-light:               lighten($color-gray-base, 10%);
+$color-muted:                    lighten($color-gray-base, 55%);
+$muted: 						 #aca6c6 !default;
+
+$color-heading:                  $color-primary;
+$color-text:                     $color-primary;
+$color-text-light:               lighten($color-text, 20%);
+$text-light: 					 $light !default;
+
+$color-linked:                   $color-primary;
+$color-linked-hover:             darken($color-linked, 15%);
+
+$border-color:                   lighten($color-gray-base, 68%);
+$border-color-light:           	 #f1f1f2;
+$bg-light: 						 $light;
+$bg-gray:                        #f1f1f1;
+$bg-footer: $color-primary;
+
+$bg-lighten-primary: 			 #f5f5fb;
+$bg-light-success: 				 lighten($success, 30%);
+$bg-light-info: 				 lighten($info, 30%);
+
+
+
+
+$bg-dropdown: 					lighten($golden-thin, 12%);
+
+$bg-footer: 					$white;
+
+
+$brand-facebook:                 #3b5998;
+$brand-google:                   #dd4b39;
+$brand-twitter:                  #00aced;
+$brand-youtube:                  #bb0000;
+$brand-linkedin:                 #007bb5;
+$brand-instagram:                #125688;
+$brand-whatsapp:                 #4dc247;
+$brand-pinterest:                #cb2027;
+$brand-flickr:                   #ff0084;
+$brand-tumblr:                   #32506d;
+$brand-vk:                       #45668e;
+
+$ff-graphik:                     'Graphik', sans-serif;
+$ff-din: 						 'DIN';
+$ff-base: 						 $ff-din;
+$fs-base: 1rem;
+$fw-base: normal;
+
+
+$padding-section: 6rem;
+$block-space: 60px;
+$common-space: 1.875rem; // 30px
+
+$navbar-height: 62px;
+
+
+$information-phone:              "only screen and (max-width : 320px)";
+$phone:                          '(max-width: 575px)';
+$extra-small-min:                '(min-width: 576px)';
+$extra-small-max:                '(max-width: 767px)';
+$small-min:                      '(min-width: 768px)';
+$small-max:                      '(max-width: 991px)';
+$small-only:                     '(min-width: 768px) and (max-width: 991px)';
+$medium-min:                     '(min-width: 992px)';
+$medium-max:                     '(max-width: 1199px)';
+$medium-only:                    '(min-width: 992px) and (max-width: 1199px)';
+$large-min:                      '(min-width: 1200px)';

@@ -1,0 +1,124 @@
+.form-control {
+	height: calc(1.5em + 1rem + 2px);
+	padding: .5rem 1rem;
+	border-color: $dark;
+	border-radius: 0;
+	&:focus {
+		border-color: $primary;
+		box-shadow: 0 0 0 0.2rem rgba($primary,.25);
+	}
+}
+.custom-select {
+	height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 2rem .5rem 1rem;
+    border-color: $border-color;
+    border-radius: 0;
+    &:focus {
+		border-color: $primary;
+		box-shadow: 0 0 0 0.2rem rgba($primary,.25);
+	}
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: $white;
+  border-color: $primary;
+  background-color: $primary;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: $light-primary;
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: $white;
+  background-color: $light-primary;
+  border-color: $light-primary;
+}
+
+.custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
+  color: #6c757d;
+}
+
+.custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
+  background-color: #e9ecef;
+}
+
+
+
+
+
+
+
+.product-quantity-default {
+	.btn-quantity {
+		background-color: $white;
+		border-radius: 0 !important;
+	}
+}
+
+.f-required {
+	&:after {
+		content: " * "
+	}
+}
+.static-label {
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	color: $muted;
+	margin-bottom: 0.125rem;
+}
+
+.floating-static-group {
+	position: relative;
+	margin-bottom: 1.875rem;
+	.floating-label {
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		line-height: 1;
+		background-color: $white;
+		color: $muted;
+		z-index: 3;
+	    max-width: 100%;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+		padding: 0 0.25rem;
+		position: absolute;
+    	top: -0.375rem;
+    	left: 0.75rem;
+    	margin-bottom: 0;
+	}
+	.floating-field {
+		border-color: lighten($primary, 47%);
+		&:focus {
+			border-color: $primary;
+		}
+	}
+
+}
+
+.floating-static-style-2 {
+	.floating-label {
+		position: static;
+		background-color: transparent;
+		padding: 0;
+	}
+	.floating-field {
+		background-color: transparent;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		border-radius: 0;
+		padding-left: 0;
+		transition: all 0.3s linear;
+		&:focus {
+			padding-left: 1rem;
+			border-color: $primary;
+			box-shadow: none;
+		}
+	}
+}

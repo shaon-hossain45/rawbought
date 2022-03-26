@@ -1,0 +1,50 @@
+.body-reached-bottom {
+	background-color: $cyan-thin;
+	color: $text-light;
+	transition: all 0.25s linear;
+	section, .footer-nav {
+		a {
+			color: $text-light;
+		}	
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+	.table {
+		color: $white;
+	}
+	.cart-totals-label, .order-actions .btn-link, .btn-coupon-collapse, .flexion .flexion-label {
+		color: $text-light;
+	}
+	.text-success {
+		color: $light-success !important;
+	}
+
+	.floating-static-style-2 {
+		.floating-label {
+			color: $text-light;
+		}
+		.floating-field {
+			border-bottom-color: rgba($white, 0.65);
+			color: $text-light;
+			@include placeholder {
+				color: $text-light;
+				opacity: 0.65
+			}
+			&:focus {
+				padding-left: 1rem;
+				border-color: $white;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.foologo {
+		.logo-primary {
+			display: none;
+		}
+		.logo-light {
+			display: block;
+		}
+	}
+}

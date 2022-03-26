@@ -1,0 +1,182 @@
+.step-section {
+	+ .step-section {
+		margin-top: 1.5rem;
+	}
+}
+.step-section-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	.step-section-title {
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+	.step-section-mono {
+		margin-bottom: 0;
+		font-size: 0.875rem;
+	}
+}
+
+.step-footer {
+	padding-top: 2rem;
+}
+.step-footer-actions {
+	@include list-unstyled;
+	margin: 0 -2px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	li {
+		padding: 2px;
+	}
+	.btn-return-cart {
+		color: $color-text;
+		&:hover {
+			border-color: $primary;
+		}
+	}
+}
+
+.step-sidebar {
+	border-left: 1px solid rgba($primary,0.45);
+	min-height: 100%;
+	padding-left: 10%;
+
+	.step-sidebar-header {
+		margin-bottom: 1.5rem;
+	}
+
+	.cart-items-list {
+		.cart-item {
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+.section-order-summary {
+	border-top: 1px solid rgba($primary,0.45);
+	padding: 1.5rem 0;
+}
+.table-cart-total {
+	th, td {
+		border-top: 0;
+		padding: 0;
+		&:last-child {
+			text-align: right;
+		}
+	}
+	tbody {
+		tr {
+			&:last-child {
+				th, td {
+					padding-bottom: 1rem;
+				}
+			}
+			+ tr {
+				th, td {
+					padding-top: 0.25rem;
+				}
+			}
+		}
+	}
+	tfoot {
+		th, td {
+			border-top: 1px solid rgba($primary,0.45);
+			padding: 1rem 0 0;
+		}
+	}
+}
+
+
+
+/* .card-order-review {
+	.review-block {
+		padding: 1rem 1.25rem;
+		+ .review-block {
+			border-top: 1px solid $border-color;
+		}
+		display: flex;
+		.review-block-inner {
+			display: flex;
+			flex: 1;
+		}
+		.review-block-label {
+			flex: 0 1 5em;
+			padding-right: 1.25rem;
+			color: rgba($primary, .65);
+		}
+		address {
+			margin-bottom: 0;
+		}
+		.review-block-link {
+			font-size: 0.813rem;
+		}
+	}
+} */
+
+.icon-mi-offsite {
+	display: inline-block;
+	width: 163px;
+    height: 81px;
+    background-image: url('../images/offsite.svg');
+}
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
+    width: 2px;
+    height: 2px;
+    margin: -2px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.card-order-review {
+	.review-block {
+		padding: 1rem 1.25rem;
+		+ .review-block {
+			border-top: 1px solid $border-color;
+		}
+		display: flex;
+		.review-block-inner {
+			display: flex;
+			flex: 1;
+		}
+		.review-block-label {
+			flex: 0 1 5em;
+			padding-right: 1.25rem;
+			color: rgba($color-text, .65);
+		}
+		address {
+			margin-bottom: 0;
+		}
+		.review-block-link {
+			font-size: 0.813rem;
+		}
+		.review-collapse {
+			width: 100%;
+			flex: 1;
+			max-width: 100%;
+		}
+		.review-collapse-safezone {
+			background-color: $bg-light;
+			margin-left: -1.25rem;
+			margin-right: -1.25rem;
+			margin-bottom: -1rem;
+			margin-top: 1rem;
+		}
+		.review-collapse-block {
+			padding: 1.25rem 1.25rem 0.5rem;
+		}
+	}
+	.offsite-payment-gateway-logo {
+		height: 24px;
+		width: auto;
+    	display: block;
+	}
+}
